@@ -28,3 +28,7 @@
 ### add mixins
 
 - добавление миксинов
+
+### add functions SASS
+
+- добавление функций SASS
