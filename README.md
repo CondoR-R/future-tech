@@ -32,3 +32,7 @@
 ### add functions SASS
 
 - добавление функций SASS
+
+### add media SASS
+
+- оформление файла _media.scss для адаптива
