@@ -40,3 +40,8 @@
 ### add CSS variables
 
 - создание CSS переменных
+
+### add utils and globals
+
+- добавление утилитарных классов в файле _utils.scss
+- добавление глобальных стилей в _globals.scss
