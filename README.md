@@ -36,3 +36,7 @@
 ### add media SASS
 
 - оформление файла _media.scss для адаптива
+
+### add CSS variables
+
+- создание CSS переменных
