@@ -1,5 +1,5 @@
 import React from 'react';
-import {useTitle} from "../../hooks/useTitle.ts";
+import {useTitle} from "../../../hooks/useTitle.ts";
 import './_home.scss';
 
 interface Props {

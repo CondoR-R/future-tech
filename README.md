@@ -45,3 +45,7 @@
 
 - добавление утилитарных классов в файле _utils.scss
 - добавление глобальных стилей в _globals.scss
+
+### add Header
+
+- верстка компонентов Header, Logo, Icon, Button и BurgerButton
