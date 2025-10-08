@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './_header.scss';
 import cn from 'classnames';
 import {Icon} from "../../common/icon/icon.tsx";
@@ -37,6 +37,12 @@ interface Props {
 }
 
 export const Header: React.FC<Props> = ({className}) => {
+  const [isActiveBurger, setIsActiveBurger] = useState<boolean>(false);
+
+  const onClickBurger = () => {
+    setIsActiveBurger(prev => !prev);
+  }
+
   return (
     <header className={cn('header', className)}>
       <div className="header__promo">
@@ -55,7 +61,7 @@ export const Header: React.FC<Props> = ({className}) => {
       <div className="header__body">
         <div className="header__body-inner container">
           <Logo className='header__logo' />
-          <div className="header__overlay">
+          <div className={cn("header__overlay", isActiveBurger && 'is-active')}>
             <nav className="header__menu">
               <ul className="header__menu-list">
                 {navMenu.map(({text, link}, i) => (
@@ -78,7 +84,11 @@ export const Header: React.FC<Props> = ({className}) => {
               content={'Связаться с нами'}
               isAccent
             /></div>
-          <BurgerButton className={'header__burger-button visible-mobile'} />
+          <BurgerButton
+            isActive={isActiveBurger}
+            className={'header__burger-button visible-mobile'}
+            onClick={onClickBurger}
+          />
         </div>
       </div>
     </header>
