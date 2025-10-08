@@ -1,6 +1,8 @@
 @use '../../../styles/helpers' as *;
 
 .header {
+  overflow: hidden;
+
   &__promo {
     padding-block: rem(20);
     text-align: center;
@@ -11,11 +13,19 @@
       align-items: center;
       gap: rem(10);
     }
+
+    @include mobile {
+      padding-block: rem(14);
+    }
   }
 
   &__body {
     padding: rem(24);
     background-color: var(--color-dark-10);
+
+    @include mobile {
+      padding-block: rem(20);
+    }
 
     &-inner {
       display: flex;
@@ -29,20 +39,63 @@
     @include mobile-above {
       display: contents;
     }
+
+    @include mobile {
+      position: fixed;
+      inset: 0;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 3rem;
+      background-color: var(--color-dark-10);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include hide;
+
+        translate: 100%;
+      }
+    }
   }
 
   &__menu {
+    @include mobile {
+      overflow-y: auto;
+    }
+
     &-list {
       display: flex;
       align-items: center;
       column-gap: rem(16);
+
+      @include laptop {
+        column-gap: rem(6);
+      }
+
+      @include mobile {
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 1rem;
+
+      }
     }
 
     &-link {
       padding: rem(14) rem(24);
       color: var(--color-gray-50);
       border-radius: rem(10);
+
+      @include laptop {
+        padding: rem(10) rem(18);
+      }
     }
+  }
+
+  &__contact-us-link {
+    width: 100%;
+    max-width: 300px;
   }
 }
 

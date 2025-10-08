@@ -4,6 +4,12 @@
   width: rem(17);
   height: rem(17);
 
+  //  @include laptop {
+  //    width: rem(13.75);
+  //    height: rem(13.75);
+  //  }
+
+
   &--yellow-arrow {
     color: var(--color-accent);
   }

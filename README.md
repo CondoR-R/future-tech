@@ -49,3 +49,7 @@
 ### add Header
 
 - верстка компонентов Header, Logo, Icon, Button и BurgerButton
+
+### адаптация шапки
+
+- адаптивная верска для шапки сайта

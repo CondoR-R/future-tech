@@ -46,7 +46,7 @@ export const Header: React.FC<Props> = ({className}) => {
             to="/"
           >
             <span>
-              Подпишитесь на нашу рассылку, чтобы получать новые и последние блоги и ресурсы
+              Подпишитесь на рассылку, чтобы получать новые блоги и ресурсы
             </span>
             <Icon type='yellowArrow' />
           </Link>
@@ -74,6 +74,7 @@ export const Header: React.FC<Props> = ({className}) => {
               </ul>
             </nav>
             <Button
+              className={'header__contact-us-link'}
               content={'Связаться с нами'}
               isAccent
             /></div>
