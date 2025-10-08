@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './_header.scss';
 import cn from 'classnames';
 import {Icon} from "../../common/icon/icon.tsx";
@@ -42,6 +42,12 @@ export const Header: React.FC<Props> = ({className}) => {
   const onClickBurger = () => {
     setIsActiveBurger(prev => !prev);
   }
+
+  useEffect(() => {
+    if (isActiveBurger) {
+      document.documentElement.classList.toggle('is-lock');
+    }
+  }, [isActiveBurger])
 
   return (
     <header className={cn('header', className)}>

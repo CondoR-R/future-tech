@@ -2,11 +2,27 @@
 
 .header {
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: rem(10) rem(100);
+
+  @keyframes scrolling-header {
+    to {
+      box-shadow: 0 0 1rem .5rem var(--color-dark-10);
+    }
+  }
+
 
   &__promo {
     padding-block: rem(20);
     text-align: center;
     border-bottom: var(--border);
+    background-color: var(--color-dark);
 
     &-link {
       display: inline-flex;
@@ -94,8 +110,10 @@
   }
 
   &__contact-us-link {
-    width: 100%;
-    max-width: 300px;
+    @include mobile {
+      width: 100%;
+      max-width: 250px;
+    }
   }
 }
 

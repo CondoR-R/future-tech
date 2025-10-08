@@ -7,7 +7,7 @@ interface Props {
 export const Footer: React.FC<Props> = ({className}) => {
   return (
     <footer className={className}>
-      footer
+      
     </footer>
   )
 }
