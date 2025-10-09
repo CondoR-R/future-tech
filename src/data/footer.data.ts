@@ -1,4 +1,8 @@
-import type {FooterListItemT, FooterNavItemT} from "../types/footer.type.ts";
+import type {
+  FooterExtraMenuItemT,
+  FooterListItemT,
+  FooterNavItemT
+} from "../types/footer.type.ts";
 
 const homeList: FooterListItemT[] = [
   {text: 'Особенности', link: '/', isNew: false},
@@ -28,17 +32,17 @@ const blogsList: FooterListItemT[] = [
 ];
 
 const podcastsList: FooterListItemT[] = [
-  {text: 'Всеобщая революция', link: '/', isNew: false},
+  {text: 'ИИ революция', link: '/', isNew: false},
   {text: 'Прорывы науки', link: '/', isNew: true},
   {text: 'Диалог об ИИ', link: '/', isNew: false},
   {text: 'Все подкасты', link: '/', isNew: false},
 ];
 
-const resourcesList: FooterListItemT[] = [
-  {text: 'Технические документы', link: '/', isNew: false},
-  {text: 'Электронные книги', link: '/', isNew: false},
-  {text: 'Отчеты', link: '/', isNew: false},
-  {text: 'Исследовательские работы', link: '/', isNew: false},
+export const resourcesList: FooterListItemT[] = [
+  {text: 'Технические документы', link: '/'},
+  {text: 'Электронные книги', link: '/'},
+  {text: 'Отчеты', link: '/'},
+  {text: 'Исследовательские работы', link: '/'},
 ];
 
 export const footerNav: FooterNavItemT[] = [
@@ -46,5 +50,9 @@ export const footerNav: FooterNavItemT[] = [
   {text: 'Новости', link: '/', list: newsList},
   {text: 'Блоги', link: '/', list: blogsList},
   {text: 'Подкасты', link: '/', list: podcastsList},
-  {text: 'Ресурсы', link: '/', list: resourcesList},
 ];
+
+export const footerExtraMenuItems: FooterExtraMenuItemT[] = [
+  {text: 'Правила и условия', link: '/'},
+  {text: 'Политика конфедециальности', link: '/'},
+]

@@ -61,3 +61,7 @@
 ### add footer nav
 
 - верстка меню навигации в Footer
+
+### add footer extra
+
+- добавление разметки нижней части Footer

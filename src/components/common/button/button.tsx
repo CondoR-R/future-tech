@@ -4,19 +4,23 @@ import './_button.scss';
 
 interface Props {
   className?: string;
-  content: string | React.ReactNode;
+  children: string | React.ReactNode;
   isAccent?: boolean;
-
+  href: string;
 }
 
 export const Button: React.FC<Props> = ({
                                           className,
-                                          content,
-                                          isAccent = false
+                                          children,
+                                          isAccent = false,
+                                          href = '/'
                                         }) => {
   return (
-    <button className={cn('button', isAccent && 'button--accent', className)}>
-      {content}
-    </button>
+    <a
+      href={href}
+      className={cn('button', isAccent && 'button--accent', className)}
+    >
+      {children}
+    </a>
   )
 }

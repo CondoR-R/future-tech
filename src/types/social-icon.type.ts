@@ -1,0 +1,1 @@
+export type SocialIconT = 'twitter' | 'medium' | 'linkedIn';

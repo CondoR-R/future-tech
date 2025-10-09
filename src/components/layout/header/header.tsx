@@ -7,10 +7,10 @@ import {NavLink} from "react-router-dom";
 import {Button} from "../../common/button/button.tsx";
 import {BurgerButton} from "../../common/burger-button/burger-button.tsx";
 import {Link} from "react-router";
-import type {NavMenuItemType} from "../../../types/nav-menu-item.type.ts";
+import type {MenuItemType} from "../../../types/menu-item.type.ts";
 
 
-const navMenu: NavMenuItemType[] = [
+const navMenu: MenuItemType[] = [
   {
     text: 'Главная',
     link: '/'
@@ -84,9 +84,9 @@ export const Header: React.FC<Props> = ({className}) => {
             </nav>
             <Button
               className={'header__contact-us-link'}
-              content={'Связаться с нами'}
               isAccent
-            /></div>
+              href={'/'}
+            >Связаться с нами</Button></div>
           <BurgerButton
             isActive={isActiveBurger}
             className={'header__burger-button visible-mobile'}

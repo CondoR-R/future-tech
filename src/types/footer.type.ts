@@ -1,5 +1,7 @@
-import type {NavMenuItemType} from "./nav-menu-item.type.ts";
+import type {MenuItemT} from "./menu-item.type.ts";
 
-export type FooterListItemT = NavMenuItemType & { isNew: boolean };
+export type FooterListItemT = MenuItemT & { isNew?: boolean };
 
-export type FooterNavItemT = (NavMenuItemType & { list: FooterListItemT[] });
+export type FooterNavItemT = (MenuItemT & { list: FooterListItemT[] });
+
+export type FooterExtraMenuItemT = MenuItemT;
