@@ -7,13 +7,10 @@ import {NavLink} from "react-router-dom";
 import {Button} from "../../common/button/button.tsx";
 import {BurgerButton} from "../../common/burger-button/burger-button.tsx";
 import {Link} from "react-router";
+import type {NavMenuItemType} from "../../../types/nav-menu-item.type.ts";
 
-type NavMenuItemT = {
-  text: string;
-  link: string;
-}
 
-const navMenu: NavMenuItemT[] = [
+const navMenu: NavMenuItemType[] = [
   {
     text: 'Главная',
     link: '/'

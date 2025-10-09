@@ -11,7 +11,7 @@ export const Home: React.FC<Props> = ({className}) => {
 
   return (
     <div className={className}>
-
+      kaskas
     </div>
   )
 }
