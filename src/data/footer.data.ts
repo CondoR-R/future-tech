@@ -3,6 +3,7 @@ import type {
   FooterListItemT,
   FooterNavItemT
 } from "../types/footer.type.ts";
+import {navMenu} from "./header.data.ts";
 
 const homeList: FooterListItemT[] = [
   {text: 'Особенности', link: '/', isNew: false},
@@ -38,18 +39,17 @@ const podcastsList: FooterListItemT[] = [
   {text: 'Все подкасты', link: '/', isNew: false},
 ];
 
+const listArr: FooterListItemT[][] = [homeList, newsList, blogsList, podcastsList];
+
+export const footerNav: FooterNavItemT[] = navMenu.map(
+  ({text, link}, i) =>
+    ({text, link, list: listArr[i]}));
+
 export const resourcesList: FooterListItemT[] = [
   {text: 'Технические документы', link: '/'},
   {text: 'Электронные книги', link: '/'},
   {text: 'Отчеты', link: '/'},
   {text: 'Исследовательские работы', link: '/'},
-];
-
-export const footerNav: FooterNavItemT[] = [
-  {text: 'Главная', link: '/', list: homeList},
-  {text: 'Новости', link: '/', list: newsList},
-  {text: 'Блоги', link: '/', list: blogsList},
-  {text: 'Подкасты', link: '/', list: podcastsList},
 ];
 
 export const footerExtraMenuItems: FooterExtraMenuItemT[] = [

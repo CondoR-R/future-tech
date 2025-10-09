@@ -10,6 +10,7 @@ import {Badge} from "../../common/badge/badge.tsx";
 import {Button} from "../../common/button/button.tsx";
 import {Icon} from "../../common/icon/icon.tsx";
 import {Socials} from "../../common/socials/socials.tsx";
+import './_footer.scss'
 
 interface Props {
   className?: string;
@@ -27,7 +28,7 @@ export const Footer: React.FC<Props> = ({className}) => {
                 className="footer__menu-column"
               >
                 <Link
-                  className="footer__menu-main-link"
+                  className="footer__menu-main-link h6"
                   to={link}
                 >
                   {text}
@@ -53,7 +54,7 @@ export const Footer: React.FC<Props> = ({className}) => {
               className="footer__menu-column"
             >
               <Link
-                className="footer__menu-main-link"
+                className="footer__menu-main-link h6"
                 to={'/'}
               >
                 Ресурсы

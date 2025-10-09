@@ -1,5 +1,6 @@
 import React from 'react';
 import cn from "classnames";
+import './_badge.scss'
 
 interface Props {
   className?: string;

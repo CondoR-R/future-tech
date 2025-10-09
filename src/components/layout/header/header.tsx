@@ -7,27 +7,8 @@ import {NavLink} from "react-router-dom";
 import {Button} from "../../common/button/button.tsx";
 import {BurgerButton} from "../../common/burger-button/burger-button.tsx";
 import {Link} from "react-router";
-import type {MenuItemType} from "../../../types/menu-item.type.ts";
+import {navMenu} from "../../../data/header.data.ts";
 
-
-const navMenu: MenuItemType[] = [
-  {
-    text: 'Главная',
-    link: '/'
-  },
-  {
-    text: 'Новости',
-    link: '/news'
-  },
-  {
-    text: 'Подкасты',
-    link: '/podcasts'
-  },
-  {
-    text: 'Ресурсы',
-    link: '/resources'
-  }
-]
 
 interface Props {
   className?: string;
