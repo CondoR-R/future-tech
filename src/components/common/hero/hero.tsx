@@ -29,7 +29,7 @@ export const Hero: React.FC<Props> = ({className}) => {
         </div>
         <Metrics
           data={heroMetrics}
-          className="hero__metrics"
+          className="hero__metrics full-vw-line full-vw-line--top full-vw-line--left"
         />
         <ResourcesPreview className="hero__resources-preview" />
       </div>
