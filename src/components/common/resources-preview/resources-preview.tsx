@@ -24,14 +24,14 @@ export const ResourcesPreview: React.FC<Props> = ({className}) => {
         <p className="resources-preview__subtitle">
           Более 1000 статей о новых технологических тенденциях и прорывах.
         </p>
-        <ButtonLink
-          className='resources-preview__button'
-          href={'/'}
-        >
-          <span>Исследовать ресурсы</span>
-          <Icon type={'yellowArrow'} />
-        </ButtonLink>
       </div>
+      <ButtonLink
+        className='resources-preview__button'
+        href={'/'}
+      >
+        <span>Исследовать ресурсы</span>
+        <Icon type={'yellowArrow'} />
+      </ButtonLink>
     </div>
   )
 }

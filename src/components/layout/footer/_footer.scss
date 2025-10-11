@@ -81,6 +81,10 @@
         &:not(:last-child)::after {
           content: '|';
           margin-inline: rem(11);
+
+          @include mobile-s {
+            margin-inline: rem(8);
+          }
         }
 
       }
