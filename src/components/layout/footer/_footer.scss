@@ -14,15 +14,38 @@
     align-items: start;
     column-gap: fluid(80, 20);
 
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: rem(40);
+    }
+
+    @include mobile {
+      row-gap: rem(20);
+    }
+
     &-column {
       display: grid;
       row-gap: fluid(30, 16);
+
+      &:last-child {
+        @include tablet {
+          grid-column: -1 / 1;
+
+          .footer__menu-list {
+            flex-direction: row;
+            gap: rem(12);
+            flex-wrap: wrap;
+          }
+        }
+      }
     }
 
     &-list {
       display: flex;
       flex-direction: column;
       row-gap: fluid(18, 8);
+
+
     }
 
     &-item {
@@ -44,6 +67,11 @@
       padding-block: rem(24);
     }
 
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(20);
+    }
+
     &-menu {
       &-list {
         display: flex;
@@ -57,5 +85,9 @@
 
       }
     }
+  }
+
+  &__soc1als {
+    order: -1;
   }
 }
