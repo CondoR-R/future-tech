@@ -11,65 +11,75 @@
 
 ## Хронология разработки
 
-### start
+#### start
 
 Создание проекта, подключение к репозиторию GitHub
 
-### initialization 0.5
+#### initialization 0.5
 
 - Подготовка структуры проекта
 - Настройка папки стилей
 - Создание роутинга
 
-### add fonts
+#### add fonts
 
 - добавление шрифтов и их подключение к стилям
 
-### add mixins
+#### add mixins
 
 - добавление миксинов
 
-### add functions SASS
+#### add functions SASS
 
 - добавление функций SASS
 
-### add media SASS
+#### add media SASS
 
 - оформление файла _media.scss для адаптива
 
-### add CSS variables
+#### add CSS variables
 
 - создание CSS переменных
 
-### add utils and globals
+#### add utils and globals
 
 - добавление утилитарных классов в файле _utils.scss
 - добавление глобальных стилей в _globals.scss
 
-### add Header
+### Header
 
-- верстка компонентов Header, Logo, Icon, Button и BurgerButton
+#### add Header
 
-### адаптация шапки
+- верстка компонентов Header, Logo, Icon, ButtonLink и BurgerButton
+
+#### адаптация шапки
 
 - адаптивная верска для шапки сайта
 
-### логика бургер кнопки
+#### логика бургер кнопки
 
 - добавление логики бургер кнопки и навигационного меню на мобильных устройствах
 
-### add footer nav
+### Footer
+
+#### add footer nav
 
 - верстка меню навигации в Footer
 
-### add footer extra
+#### add footer extra
 
 - добавление разметки нижней части Footer
 
-### add footer CSS
+#### add footer CSS
 
 - стилизация Footer и его дочерних компонентов
 
-### адаптив footer
+#### адаптив footer
 
 - адаптивный дизайн для Footer
+
+### Home Page (Hero)
+
+#### разметка Hero 1
+
+- разметка компонента Hero и его дочерних компонентов внутри hero__main

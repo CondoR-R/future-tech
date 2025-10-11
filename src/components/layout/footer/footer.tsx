@@ -7,7 +7,7 @@ import {
   resourcesList
 } from "../../../data/footer.data.ts";
 import {Badge} from "../../common/badge/badge.tsx";
-import {Button} from "../../common/button/button.tsx";
+import {ButtonLink} from "../../common/button-link/button-link.tsx";
 import {Icon} from "../../common/icon/icon.tsx";
 import {Socials} from "../../common/socials/socials.tsx";
 import './_footer.scss'
@@ -65,13 +65,13 @@ export const Footer: React.FC<Props> = ({className}) => {
                     key={i}
                     className={'footer__menu-item'}
                   >
-                    <Button
+                    <ButtonLink
                       className="footer__menu-link"
                       href={link}
                     >
                       <span>{text}</span>
                       <Icon type={'yellowArrow'} />
-                    </Button>
+                    </ButtonLink>
                   </li>
                 ))}
               </ul>

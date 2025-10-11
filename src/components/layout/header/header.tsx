@@ -4,7 +4,7 @@ import cn from 'classnames';
 import {Icon} from "../../common/icon/icon.tsx";
 import {Logo} from "../../common/logo/logo.tsx";
 import {NavLink} from "react-router-dom";
-import {Button} from "../../common/button/button.tsx";
+import {ButtonLink} from "../../common/button-link/button-link.tsx";
 import {BurgerButton} from "../../common/burger-button/burger-button.tsx";
 import {Link} from "react-router";
 import {navMenu} from "../../../data/header.data.ts";
@@ -63,14 +63,14 @@ export const Header: React.FC<Props> = ({className}) => {
 
               </ul>
             </nav>
-            <Button
+            <ButtonLink
               className={'header__contact-us-link'}
               isAccent
               href={'/'}
-            >Связаться с нами</Button></div>
+            >Связаться с нами</ButtonLink></div>
           <BurgerButton
             isActive={isActiveBurger}
-            className={'header__burger-button visible-mobile'}
+            className={'header__burger-button-link visible-mobile'}
             onClick={onClickBurger}
           />
         </div>
