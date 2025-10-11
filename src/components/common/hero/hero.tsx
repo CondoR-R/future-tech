@@ -2,8 +2,9 @@ import React from 'react';
 import './_hero.scss';
 import cn from "classnames";
 import {Metrics} from "../metrics/metrics.tsx";
-import {homeHeroMetrics} from "../../../data/home.data.ts";
+import {heroAdvantages, heroMetrics} from "../../../data/hero.data.ts";
 import {ResourcesPreview} from "../resources-preview/resources-preview.tsx";
+import {AdvantageCard} from "../advantage-card/advantage-card.tsx";
 
 interface Props {
   className?: string;
@@ -27,12 +28,24 @@ export const Hero: React.FC<Props> = ({className}) => {
           </div>
         </div>
         <Metrics
-          data={homeHeroMetrics}
+          data={heroMetrics}
           className="hero__metrics"
         />
         <ResourcesPreview className="hero__resources-preview" />
       </div>
-      <div className="hero__advantages"></div>
+      <div className="hero__advantages">
+        <h2 className="visually-hidden">Наши преимущества</h2>
+        <ul className="hero__advantages-list container">
+          {heroAdvantages.map((advantage, i) => (
+            <li
+              key={i}
+              className="hero__advantages-item"
+            >
+              <AdvantageCard advantage={advantage} />
+            </li>))}
+
+        </ul>
+      </div>
     </section>
   )
 }

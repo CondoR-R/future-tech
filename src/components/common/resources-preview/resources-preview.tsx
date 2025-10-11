@@ -2,7 +2,7 @@ import React from 'react';
 import cn from "classnames";
 import './_resources-preview.scss';
 import {Team} from "../team/team.tsx";
-import {homeHeroTeam} from "../../../data/home.data.ts";
+import {heroTeam} from "../../../data/hero.data.ts";
 import {ButtonLink} from "../button-link/button-link.tsx";
 import {Icon} from "../icon/icon.tsx";
 
@@ -15,7 +15,7 @@ export const ResourcesPreview: React.FC<Props> = ({className}) => {
     <div className={cn('resources-preview', className)}>
       <Team
         className='resources-preview__team'
-        images={homeHeroTeam}
+        images={heroTeam}
       />
       <div className="resources-preview__body">
         <h5 className="resources__preview-title h5">
